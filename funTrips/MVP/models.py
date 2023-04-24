@@ -25,7 +25,7 @@ class Entertainment (models.Model):
     duration = models.TimeField()
     price = models.DecimalField()
 
-class order (models.Model):
+class Order (models.Model):
     client = models.ForeignKey(Profile,on_delete=models.CASCADE)
     place =  models.ForeignKey(Destination,on_delete=models.CASCADE)
     activity = models.ForeignKey(Entertainment,on_delete=models.CASCADE)
